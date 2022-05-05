@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Northwind.Migrations
+namespace Identity.Migrations
 {
     public partial class CreateDiscount : Migration
     {

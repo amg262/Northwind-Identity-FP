@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Northwind.Models;
+using Identity.Models;
 
-namespace Northwind.Migrations
+namespace Identity.Migrations
 {
     [DbContext(typeof(NorthwindContext))]
     [Migration("20220407132510_CustomerEmail")]
