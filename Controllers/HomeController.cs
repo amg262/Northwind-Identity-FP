@@ -17,20 +17,16 @@ namespace Identity.Controllers
             userManager = userMgr;
         }
 
-// this controller depends on the NorthwindRepository
-        private NorthwindContext _northwindContext;
-        public HomeController(NorthwindContext db) => _northwindContext = db;
-
-        //public ActionResult Index() => View(_northwindContext.Discounts.Where(d => d.StartTime <= DateTime.Now && d.EndTime > DateTime.Now).Take(3));
         /*[Authorize]
         public IActionResult Index()
         {
             return View((object)"Hello");
         }*/
+        public ActionResult Index() => View(_northwindContext.Discounts.Where(d => d.StartTime <= DateTime.Now && d.EndTime > DateTime.Now).Take(3));
 
         //[Authorize(Roles = "Manager")]
         [Authorize]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index2()
         {
             AppUser user = await userManager.GetUserAsync(HttpContext.User);
             string message = "Hello " + user.UserName;
