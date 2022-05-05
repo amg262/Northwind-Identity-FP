@@ -22,8 +22,13 @@ namespace Identity
         {
             services.AddTransient<IPasswordValidator<AppUser>, CustomPasswordPolicy>();
             services.AddTransient<IUserValidator<AppUser>, CustomUsernameEmailPolicy>();
-            services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
+            // services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
+            services.AddDbContext<NorthwindContext>(options => options.UseSqlServer(Configuration["Data:Northwind:ConnectionString"]));
+            services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(Configuration["Data:AppIdentity:ConnectionString"]));
+
             services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppIdentityDbContext>().AddDefaultTokenProviders();
+            services.AddControllersWithViews();
+
 
             /*services.ConfigureApplicationCookie(options =>
             {
@@ -41,7 +46,7 @@ namespace Identity
             services.Configure<IdentityOptions>(opts =>
             {
                 opts.User.RequireUniqueEmail = true;
-                opts.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyz";
+                //opts.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyz";
                 opts.Password.RequiredLength = 8;
                 opts.Password.RequireNonAlphanumeric = true;
                 opts.Password.RequireLowercase = false;
