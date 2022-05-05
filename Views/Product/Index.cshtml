@@ -1,7 +1,7 @@
 @using Identity.Models
 @model IEnumerable<Category>
 
-<div id="User" style="display:none;" data-email="@User.Identity.Name" data-customer="@User.IsInRole("customer")"></div>
+<div id="User" style="display:none;" data-email="@User.Identity.Name" data-customer="@User.IsInRole("northwind-customer")"></div>
 <table class="table table-hover">
     <thead>
         <tr>
