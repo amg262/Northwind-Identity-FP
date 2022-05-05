@@ -172,3 +172,11 @@ C:\Users\Andy\DotNet\Identity\obj\Debug\net5.0\Identity.dll
 C:\Users\Andy\DotNet\Identity\obj\Debug\net5.0\ref\Identity.dll
 C:\Users\Andy\DotNet\Identity\obj\Debug\net5.0\Identity.pdb
 C:\Users\Andy\DotNet\Identity\obj\Debug\net5.0\Identity.genruntimeconfig.cache
+C:\Users\Andy\DotNet\Identity\obj\Debug\net5.0\Razor\Index.cshtml.g.cs
+C:\Users\Andy\DotNet\Identity\obj\Debug\net5.0\Razor\Views\Account\AccessDenied copy.cshtml.g.cs
+C:\Users\Andy\DotNet\Identity\obj\Debug\net5.0\Razor\Views\Account\Login copy.cshtml.g.cs
+C:\Users\Andy\DotNet\Identity\obj\Debug\net5.0\Razor\Views\Customer\Account.cshtml.g.cs
+C:\Users\Andy\DotNet\Identity\obj\Debug\net5.0\Razor\Views\Customer\Register.cshtml.g.cs
+C:\Users\Andy\DotNet\Identity\obj\Debug\net5.0\Razor\Views\Product\Category.cshtml.g.cs
+C:\Users\Andy\DotNet\Identity\obj\Debug\net5.0\Razor\Views\Product\Discount.cshtml.g.cs
+C:\Users\Andy\DotNet\Identity\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
