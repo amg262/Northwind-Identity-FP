@@ -30,6 +30,7 @@ namespace Identity
             services.AddControllersWithViews();
 
 
+            // All this documenation is for reference
             /*services.ConfigureApplicationCookie(options =>
             {
                 options.Cookie.Name = ".AspNetCore.Identity.Application";
